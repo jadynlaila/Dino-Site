@@ -53,8 +53,8 @@ nav form{
 }
 
 nav img{
-    max-width: 125px;
-    max-height: 125px;
+    max-width: 115px;
+    max-height: 115px;
 }
 
 .sType{
@@ -89,3 +89,29 @@ a[href="../Dino-Site/services/services.html"]:hover{
 a[href="../Dino-Site/services/services.html"]{
     color: rgb(88, 136, 199);
 }
+
+/* Logo */
+
+.logo{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4%;
+}
+
+/* Content */
+
+.content{
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4%;
+}
+
