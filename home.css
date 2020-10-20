@@ -106,12 +106,16 @@ a[href="../Dino-Site/services/services.html"]{
 
 .content{
     width: 80%;
-    height: fit-content;
-    display: flex;
+    height: auto;
+    display: grid;
     background-color: whitesmoke;
-    justify-content: center;
+    justify-items: center;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     border-radius: 4%;
+    text-align: center;
 }
+
+
 
