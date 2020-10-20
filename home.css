@@ -104,14 +104,34 @@ a[href="../Dino-Site/services/services.html"]{
 
 /* Content */
 
-.content{
+.firstContent{
     width: 80%;
-    height: fit-content;
-    display: flex;
+    height: auto;
+    display: grid;
     background-color: whitesmoke;
-    justify-content: center;
+    justify-items: center;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     border-radius: 4%;
+    text-align: center;
+    padding: 0;
 }
+
+.secondContent{
+    width: 80%;
+    height: auto;
+    display: grid;
+    background-color: whitesmoke;
+    justify-items: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4%;
+    text-align: center;
+    padding: 0;
+    margin-top: 20px;
+}
+
+
 
