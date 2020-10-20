@@ -43,5 +43,19 @@ nav form{
     flex: 1;
     display: flex;
     align-items: center;
-    height: 100%;
+    justify-content: center;
+}
+
+nav img{
+    max-width: 125px;
+    max-height: 125px;
+}
+
+.sType{
+    height: 30px;
+    width: 250px;
+}
+
+.sButton{
+    height: 36px;
 }
