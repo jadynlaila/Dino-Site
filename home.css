@@ -5,17 +5,20 @@ background-attachment: fixed;
 background-size: cover;
 }
 
+/* Header Changes */
+
 nav, article, aside, footer{
     background-color: whitesmoke;
     padding: 1%;
 }
 
 nav{
-    height: 50px;
+    height: 40px;
     display: flex;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
     align-items: center;
+    
 }
 
 nav ul{
@@ -23,20 +26,23 @@ nav ul{
     list-style-type: none;
     flex: 2;
     display: flex;
+
 }
 
 nav li{
     display: inline;
     text-align: center;
     flex: 1;
+
 }
 
 nav a{
     display: inline-block;
     font-size: 2rem;
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
+    justify-content: space-evenly;
 }
 
 nav form{
@@ -58,4 +64,28 @@ nav img{
 
 .sButton{
     height: 36px;
+
+}
+
+/* Hover Changes */
+
+a[href="home.html"]:hover{
+    color: rgb(141, 184, 241);
+}
+a[href="home.html"]{
+    color: rgb(88, 136, 199);
+}
+
+a[href="../Dino-Site/gallery/gallery.html"]:hover{
+    color: rgb(141, 184, 241);
+}
+a[href="../Dino-Site/gallery/gallery.html"]{
+    color: rgb(88, 136, 199);
+}
+
+a[href="../Dino-Site/services/services.html"]:hover{
+    color: rgb(141, 184, 241);
+} 
+a[href="../Dino-Site/services/services.html"]{
+    color: rgb(88, 136, 199);
 }
