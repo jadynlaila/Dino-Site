@@ -97,7 +97,8 @@ article{
     grid-template-rows: auto;
     grid-template-areas: 
     "img name"
-    "img info";
+    "img info"
+    "img button";
 }
 article ul{
     list-style: none;
