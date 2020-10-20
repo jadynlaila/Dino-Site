@@ -5,9 +5,123 @@ background-attachment: fixed;
 background-size: cover;
 }
 
+nav, aside, footer{
+    background-color: whitesmoke;
+    padding: 1%;
+}
 
+nav{
+    height: 40px;
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    align-items: center;
+    
+}
+
+nav ul{
+    padding: 0;
+    list-style-type: none;
+    flex: 2;
+    display: flex;
+
+}
+
+nav li{
+    display: inline;
+    text-align: center;
+    flex: 1;
+
+}
+
+nav a{
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: black;
+    justify-content: space-evenly;
+}
+
+nav form{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav img{
+    max-width: 115px;
+    max-height: 115px;
+}
+
+.sType{
+    height: 30px;
+    width: 250px;
+}
+
+.sButton{
+    height: 36px;
+
+}
+
+/* Hover Changes */
+
+a[href="home.html"]:hover{
+    color: rgb(141, 184, 241);
+}
+a[href="home.html"]{
+    color: rgb(88, 136, 199);
+}
+
+a[href="../Dino-Site/gallery/gallery.html"]:hover{
+    color: rgb(141, 184, 241);
+}
+a[href="../Dino-Site/gallery/gallery.html"]{
+    color: rgb(88, 136, 199);
+}
+
+a[href="../Dino-Site/services/services.html"]:hover{
+    color: rgb(141, 184, 241);
+} 
+a[href="../Dino-Site/services/services.html"]{
+    color: rgb(88, 136, 199);
+}
+
+/* Information Page */
+
+article{
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "img name"
+    "img info";
+}
 article ul{
     list-style: none;
+}
 
+img{
+    grid-area: img;
+}
+.dinoPic{
+    justify-content: center;
+    background-size: cover;
+    padding-left: 8rem;
+    padding-right: 8rem;
+
+}
+
+.information{
+    grid-area: info;
+}
+
+
+
+.name{
+    font-style: bold;
+    grid-area: name;
 }
 
