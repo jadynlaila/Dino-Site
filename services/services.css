@@ -135,3 +135,21 @@ header{
 a{
     text-transform: uppercase;
 }
+
+.footer{
+    margin: 0;
+    padding: 0;
+    color: rgb(87, 87, 87);
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+    align-content: end;
+    justify-content: space-evenly;
+    position: top;
+    font-size: 12px;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    position: relative;
+    bottom: 1px;
+}
