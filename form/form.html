@@ -8,27 +8,152 @@
     <meta property='og: image' content=''>
     <meta property='og: title' content=''>
     <meta property='og: description' content=''>
-    <title>Forms</title>
+    <title>Order</title>
     <link rel='stylesheet' href='form.css'>
     <link rel='shortcut icon' href='Untitled.png', type='image/x-icon'>
 </head>
 <body>
+
+    <nav>
+        <img src="../images/Logo.png">
+        <form>
+            <input class="sType" type="input" name="query" placeholder="Search Site">
+            <input class="sButton" name="submit" src="../images/search icon.png" type="image">
+        </form>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="../Dino-Site/gallery/gallery.html">Gallery</a></li>
+            <li><a href="../Dino-Site/services/services.html">Services</a></li>
+        </ul>
+    </nav>
+
     <header>
         <h1>Order Forms</h1>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="../home.html">Home</a></li>
-            <li><a href="../gallery/gallery.html">Gallery</a></li>
-            <li><a href="../services/services.html">Services</a></li>
-            <li><a href="../form/form.html">Order Forms</a></li>
-        </ul>
+    
+    <main>
+        <form action="data.json" method="post">
+                <article>
+                    <h2>Egg Orders</h2>
+                    <ul>
+                        <li>Apatosaurus<input type="number" id="number" name="Apatosaurus" min="0" placeholder="0"></li>
+                        <li>Brachiosaurus<input type="number" id="number" name="Brachiosaurus" min="0" placeholder="0"></li>
+                        <li>Coelophysis<input type="number" id="number" name="Coelophysis" min="0" placeholder="0"></li>
+                        <li>Diplodocus<input type="number" id="number" name="Diplodocus" min="0" placeholder="0"></li>
+                        <li>Einiosaurus<input type="number" id="number" name="Einiosaurus" min="0" placeholder="0"></li>
+                        <li>Ornithomimids<input type="number" id="number" name="Ornithomimids" min="0" placeholder="0"></li>
+                        <li>Stegosaurus<input type="number" id="number" name="Stegosaurus" min="0" placeholder="0"></li>
+                        <li>Triceratops<input type="number" id="number" name="Triceratops" min="0" placeholder="0"></li>
+                        <li>Tyrannosaurus<input type="number" id="number" name="Tyrannosaurus" min="0" placeholder="0"></li>
+                    </ul>
+                </article>
+                <article class="delivery">
+                    <h3>Delivery Options</h3>
+                        <ul>
+                            <li><label for="delivery"></label><input type="radio" id="pickUp" name="delivery">Pick Up</li>
+                            <li><label for="delivery"></label><input type="radio" id="ship" name="delivery">Deliver to house</li>
+                        </ul>
+                </article>
 
-        <form>
-            <input type="input" name="query" placeholder="Search Site">
-            <input type="submit" name="submit" id="submit" value="Search">
+                <article class="extras">
+                    <h3>Extras</h3>
+                        <ul>
+                            <li><input type="checkbox" id="nest" name="User.Topping1">Hatching Nest</li>
+                            <li><input type="checkbox" id="booklet" name="User.Topping2">Informational Booklet</li>
+                            <li><input type="checkbox" id="collar" name="User.Topping3">Expandable Collar</li>
+                            <li><input type="checkbox" id="course" name="User.Topping4">Video Training Course</li>
+                        </ul>
+                </article>
+
+            <button type="submit">Place Order</button>
+
         </form>
-    </nav>
+    </article>
+    <article class="payment">
+    <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form action="data.json">
+      
+              <div class="row">
+                <div class="col-50">
+                  <h3>Billing Address</h3>
+                  <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                  <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                  <input type="text" id="email" name="email" placeholder="john@example.com">
+                  <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                  <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                  <label for="city"><i class="fa fa-institution"></i> City</label>
+                  <input type="text" id="city" name="city" placeholder="New York">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="state">State</label>
+                      <input type="text" id="state" name="state" placeholder="NY">
+                    </div>
+                    <div class="col-50">
+                      <label for="zip">Zip</label>
+                      <input type="text" id="zip" name="zip" placeholder="10001">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-50">
+                  <h3>Payment</h3>
+                  <label for="fname">Accepted Cards</label>
+                  <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                  </div>
+                  <label for="cname">Name on Card</label>
+                  <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                  <label for="ccnum">Credit card number</label>
+                  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                  <label for="expmonth">Exp Month</label>
+                  <input type="text" id="expmonth" name="expmonth" placeholder="September">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Exp Year</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="2018">
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CVV</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="352">
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+              </label>
+              <input type="submit" value="Continue to checkout" class="btn">
+            </form>
+          </div>
+        </div>
+      
+        <div class="col-25">
+          <div class="container">
+            <h4>Cart
+              <span class="price" style="color:black">
+                <i class="fa fa-shopping-cart"></i>
+                <b>4</b>
+              </span>
+            </h4>
+            <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+            <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+            <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+            <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+            <hr>
+            <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+          </div>
+        </div>
+      </div>
+    </main>
 </body>
 </html>
