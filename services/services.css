@@ -5,6 +5,9 @@ background-attachment: fixed;
 background-size: cover;
 }
 
+html body{
+    margin: 0;
+}
 /* Header Changes */
 
 nav, article, aside, footer{
@@ -18,7 +21,9 @@ nav{
     margin-bottom: 10px;
     margin-top: 20px;
     align-items: center;
-    
+    position: sticky;
+    margin: 8px;
+    padding-top: 20px;
 }
 
 nav ul{
@@ -53,8 +58,8 @@ nav form{
 }
 
 nav img{
-    max-width: 125px;
-    max-height: 125px;
+    max-width: 115px;
+    max-height: 115px;
 }
 
 .sType{
@@ -90,22 +95,66 @@ a[href="../services/services.html"]{
     color: rgb(88, 136, 199);
 }
 
-.description{
-    border: 3px solid white;
+.description1, .description2, .description3, .description4{
+    border: 3px solid rgb(153, 0, 255);
     width: fit-content;
     height: fit-content;
-    background-color: white;
-        color: black;
+    background-color: rgb(153, 0, 255);
+    color: white;
     border-radius: 0.5rem;
 }
 
 p{
-    border: solid 2px rgb(0, 183, 255);
+    border: solid 3px rgb(0, 183, 255);
     width: 500px;
+    border-radius: 1rem;
 }
 
 .title{
     font-size: 50px;
     border: solid 3px rgb(0, 195, 255);
     text-align: center;
+    width: fit-content;
+    background-color: rgb(0, 195, 255);
+    border-radius: 1rem;
+    color: white;
+}
+
+/*
+.wrapper{
+    grid-area: idk;
+    grid-template-columns: 500px, 500px;
+}
+*/
+
+header{
+    padding-left: 650px;
+}
+
+.testimonials{
+    position: fixed;
+    bottom: 385px;
+    left: 600px;
+}
+
+a{
+    text-transform: uppercase;
+}
+
+.footer{
+    margin: 0;
+    padding: 0;
+    color: rgb(87, 87, 87);
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+    align-content: end;
+    justify-content: space-evenly;
+    position: top;
+    font-size: 12px;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    position: relative;
+    bottom: 1px;
 }

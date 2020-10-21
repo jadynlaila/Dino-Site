@@ -1,0 +1,114 @@
+html{
+background-attachment: fixed;
+background-size: cover;
+}
+
+.bg{
+    /* The image used */
+    background-image: url("../images/completely\ legit\ error\ page.png");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+/* Header Changes */
+
+nav, article, aside, footer{
+    background-color: whitesmoke;
+    padding: 1%;
+}
+
+nav{
+    height: 40px;
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    align-items: center;
+    
+}
+
+nav ul{
+    padding: 0;
+    list-style-type: none;
+    flex: 2;
+    display: flex;
+
+}
+
+nav li{
+    display: inline;
+    text-align: center;
+    flex: 1;
+
+}
+
+nav a{
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: black;
+    justify-content: space-evenly;
+}
+
+nav form{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav img{
+    max-width: 115px;
+    max-height: 115px;
+}
+
+.sType{
+    height: 30px;
+    width: 250px;
+}
+
+.sButton{
+    height: 36px;
+
+}
+
+/* Hover Changes */
+
+a[href="home.html"]:hover{
+    color: rgb(141, 184, 241);
+}
+a[href="home.html"]{
+    color: rgb(88, 136, 199);
+}
+
+a[href="../Dino-Site/gallery/gallery.html"]:hover{
+    color: rgb(141, 184, 241);
+}
+a[href="../Dino-Site/gallery/gallery.html"]{
+    color: rgb(88, 136, 199);
+}
+
+a[href="../Dino-Site/services/services.html"]:hover{
+    color: rgb(141, 184, 241);
+} 
+a[href="../Dino-Site/services/services.html"]{
+    color: rgb(88, 136, 199);
+}
+
+/* Logo */
+
+.logo{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4%;
+}

@@ -4,6 +4,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 background-attachment: fixed;
 background-size: cover;
 }
+html body{
+    margin: 0;
+}
 
 nav, aside, footer{
     background-color: whitesmoke;
@@ -16,7 +19,8 @@ nav{
     margin-bottom: 10px;
     margin-top: 20px;
     align-items: center;
-    
+    margin: 8px;
+    padding-top: 20px;
 }
 
 nav ul{
