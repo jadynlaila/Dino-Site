@@ -95,49 +95,87 @@ a[href="../services/services.html"]{
     color: rgb(88, 136, 199);
 }
 
-.description1, .description2, .description3, .description4{
-    border: 3px solid rgb(153, 0, 255);
-    width: fit-content;
-    height: fit-content;
-    background-color: rgb(153, 0, 255);
+.header{
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(116, 211, 255);
+    border-radius: 5rem;
+    padding: 5px;
+    max-width: fit-content;
+    border: solid 5px rgb(179, 65, 255);
     color: white;
-    border-radius: 0.5rem;
-}
-
-p{
-    border: solid 3px rgb(0, 183, 255);
-    width: 500px;
-    border-radius: 1rem;
 }
 
 .title{
-    font-size: 50px;
-    border: solid 3px rgb(0, 195, 255);
-    text-align: center;
-    width: fit-content;
-    background-color: rgb(0, 195, 255);
+    border: solid 3px rgb(116, 211, 255);
+    max-width: fit-content;
+    padding: 3px;
     border-radius: 1rem;
+}
+
+.navbar{
+    padding-top: 5px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.services{
+    padding-left: 43rem;
+    padding-bottom: 50px;
+}
+
+.box{
+    max-width: 700px;
+    background-color: rgb(179, 65, 255);
+    border-radius: 2.5rem;
+    border: .5rem solid rgb(116, 211, 255);
+    margin: 5px;
+    list-style-type: none;
+    padding: 10px;
+    flex-direction: column;
     color: white;
 }
 
-/*
-.wrapper{
-    grid-area: idk;
-    grid-template-columns: 500px, 500px;
-}
-*/
-
-header{
-    padding-left: 650px;
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 250px 200px 200px;
+    padding-bottom: 50px;
 }
 
-.testimonials{
-    position: fixed;
-    bottom: 385px;
-    left: 600px;
+.one{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
-a{
+.two{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.three{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.four{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.funny-haha-link{
+    grid-column: 2 / 3;
+    padding-left: 50px;
+}
+
+.link{
+    background-color: rgb(179, 65, 255);
+    border: .5rem solid rgb(116, 211, 255);
+    color: white;
+    max-width: fit-content;
+    padding: 8px;
+    border-radius: 2.5rem;
     text-transform: uppercase;
 }
 
