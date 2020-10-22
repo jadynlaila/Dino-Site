@@ -6,7 +6,17 @@ background-size: cover;
 }
 
 html body{
-  margin: 0;
+    margin: 0;
+}
+
+header{
+    margin-left: 10rem;
+    text-decoration: underline;
+    color: #5A399B;
+}
+
+body{
+    margin-right: 0;
 }
 
 nav, aside, footer{
@@ -72,65 +82,73 @@ nav img{
 
 /* Hover Changes */
 
-a[href="home.html"]:hover{
+a[href="../home.html"]:hover{
     color: rgb(141, 184, 241);
 }
-a[href="home.html"]{
+a[href="../home.html"]{
     color: rgb(88, 136, 199);
 }
 
-a[href="../Dino-Site/gallery/gallery.html"]:hover{
+a[href="../gallery/gallery.html"]:hover{
     color: rgb(141, 184, 241);
 }
-a[href="../Dino-Site/gallery/gallery.html"]{
+a[href="../gallery/gallery.html"]{
     color: rgb(88, 136, 199);
 }
 
-a[href="../Dino-Site/services/services.html"]:hover{
+a[href="../services/services.html"]:hover{
     color: rgb(141, 184, 241);
 } 
-a[href="../Dino-Site/services/services.html"]{
+a[href="../services/services.html"]{
     color: rgb(88, 136, 199);
 }
 
 /* Spacing out parts */
 
-  article ul li{
-      list-style: none;
-      padding-bottom: .5rem;
-  }
+article ul li{
+    list-style: none;
+    padding-bottom: .5rem;
+}
 
-  main{
+main{
     columns: 2;
     color: #5A399B;
-  }
+    display: flexbox;
+    grid-template-rows: (2,50%);
+    grid-template-columns: (2,50%);
+    grid-template-areas:
+    "orders delivery"
+    "orders extras";
+}
 
 .orders{
+    margin-left: 4rem;
+    margin-bottom: 5rem;
     grid-area: orders;
-    grid-row: 1/4;
     grid-column: 1/2;
     background-color: whitesmoke;
     padding: 1rem;
+    padding-bottom: 2rem;
 }
 
 
 article.extras{
-    grid-area: extras;
     grid-column: 2/3;
-    grid-row: 1/2;
     background-color: whitesmoke;
     padding: 1rem;
+    margin-right: 4rem;
+    grid-area: extras
 }
     
 
 article.delivery{
-    grid-area: delivery;
-    grid-column: 2/3;
     grid-column: 2/3;
     background-color: whitesmoke;
     padding: 1rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
+    margin-right: 4rem;
+    grid-area: delivery;
 }
 
 button{
@@ -141,14 +159,38 @@ button{
     border-color: #5A399B;
     margin-top: 1rem;
     grid-column: 2/3;
+    position: relative;
+    left: 17rem;
 }
 
 article ul li input{
-    align-content: right;
+
     width: 2.5rem;
     text-align: right;
+    
 }
 
 body main{
     margin-left: 4rem;
 }
+
+form .placeOrder{
+    position: absolute;
+    right: 4rem;
+    justify-self: right;
+}
+
+main form form{
+    justify-content: right;
+    position: absolute;
+    right: 0em;
+}
+
+input[type=number]{
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+
+}
+
+
