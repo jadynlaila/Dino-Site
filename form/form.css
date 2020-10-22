@@ -6,7 +6,17 @@ background-size: cover;
 }
 
 html body{
-  margin: 0;
+    margin: 0;
+}
+
+header{
+    margin-left: 10rem;
+    text-decoration: underline;
+    color: #5A399B;
+}
+
+body{
+    margin-right: 0;
 }
 
 nav, aside, footer{
@@ -72,38 +82,44 @@ nav img{
 
 /* Hover Changes */
 
-a[href="home.html"]:hover{
+a[href="../home.html"]:hover{
     color: rgb(141, 184, 241);
 }
-a[href="home.html"]{
+a[href="../home.html"]{
     color: rgb(88, 136, 199);
 }
 
-a[href="../Dino-Site/gallery/gallery.html"]:hover{
+a[href="../gallery/gallery.html"]:hover{
     color: rgb(141, 184, 241);
 }
-a[href="../Dino-Site/gallery/gallery.html"]{
+a[href="../gallery/gallery.html"]{
     color: rgb(88, 136, 199);
 }
 
-a[href="../Dino-Site/services/services.html"]:hover{
+a[href="../services/services.html"]:hover{
     color: rgb(141, 184, 241);
 } 
-a[href="../Dino-Site/services/services.html"]{
+a[href="../services/services.html"]{
     color: rgb(88, 136, 199);
 }
 
 /* Spacing out parts */
 
-  article ul li{
-      list-style: none;
-      padding-bottom: .5rem;
-  }
+article ul li{
+    list-style: none;
+    padding-bottom: .5rem;
+}
 
-  main{
+main{
     columns: 2;
     color: #5A399B;
-  }
+    display: flexbox;
+    grid-template-rows: (2,50%);
+    grid-template-columns: (2,50%);
+    grid-template-areas:
+    "orders delivery"
+    "orders extras";
+}
 
 .orders{
     margin-left: 4rem;
@@ -112,6 +128,9 @@ a[href="../Dino-Site/services/services.html"]{
     grid-column: 1/2;
     background-color: whitesmoke;
     padding: 1rem;
+    padding-bottom: 3.6rem;
+    border: 1px solid black;
+    border-radius: 1%;
 }
 
 
@@ -120,6 +139,9 @@ article.extras{
     background-color: whitesmoke;
     padding: 1rem;
     margin-right: 4rem;
+    grid-area: extras;
+    border: 1px solid black;
+    border-radius: 1%;
 }
     
 
@@ -130,6 +152,8 @@ article.delivery{
     margin-bottom: 1rem;
     margin-top: 1rem;
     margin-right: 4rem;
+    grid-area: delivery;
+    border: 1px solid black;
 }
 
 button{
@@ -144,8 +168,31 @@ button{
 }
 
 article ul li input{
-    align-content: right;
+
     width: 2.5rem;
     text-align: right;
     
 }
+
+body main{
+    margin-left: 4rem;
+}
+
+form .placeOrder{
+    position: absolute;
+    right: 4rem;
+    justify-self: right;
+}
+
+main form form{
+    justify-content: end;
+    position: absolute;
+    right: 0em;
+}
+
+.number{
+    position: absolute;
+    left: 19rem;
+}
+
+

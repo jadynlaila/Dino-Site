@@ -140,7 +140,7 @@ a[href="../services/services.html"]{
 .container{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 250px 200px 200px;
+    grid-template-rows: 300px 300px 200px;
     padding-bottom: 50px;
 }
 
@@ -167,6 +167,10 @@ a[href="../services/services.html"]{
 .funny-haha-link{
     grid-column: 2 / 3;
     padding-left: 50px;
+}
+
+.return-policy{
+    text-transform: uppercase;
 }
 
 .link{
