@@ -107,8 +107,8 @@ a[href="../Dino-Site/services/services.html"]{
 
 .orders{
     margin-left: 4rem;
+    margin-bottom: 5rem;
     grid-area: orders;
-    grid-row: 1/4;
     grid-column: 1/2;
     background-color: whitesmoke;
     padding: 1rem;
@@ -116,21 +116,20 @@ a[href="../Dino-Site/services/services.html"]{
 
 
 article.extras{
-    grid-area: extras;
     grid-column: 2/3;
-    grid-row: 1/2;
     background-color: whitesmoke;
     padding: 1rem;
+    margin-right: 4rem;
 }
     
 
 article.delivery{
-    grid-area: delivery;
-    grid-column: 2/3;
     grid-column: 2/3;
     background-color: whitesmoke;
     padding: 1rem;
     margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-right: 4rem;
 }
 
 button{
@@ -141,10 +140,13 @@ button{
     border-color: #5A399B;
     margin-top: 1rem;
     grid-column: 2/3;
+    position: relative;
+    left: 17rem;
 }
 
 article ul li input{
     align-content: right;
     width: 2.5rem;
     text-align: right;
+    
 }
