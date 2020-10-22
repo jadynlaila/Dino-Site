@@ -140,8 +140,7 @@ button{
     border-color: #5A399B;
     margin-top: 1rem;
     grid-column: 2/3;
-    position: relative;
-    left: 17rem;
+    
 }
 
 article ul li input{
