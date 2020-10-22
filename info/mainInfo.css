@@ -4,19 +4,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 background-attachment: fixed;
 background-size: cover;
 }
-
 html body{
     margin: 0;
-}
-
-header{
-    margin-left: 10rem;
-    text-decoration: underline;
-    color: #5A399B;
-}
-
-body{
-    margin-right: 0;
 }
 
 nav, aside, footer{
@@ -82,73 +71,62 @@ nav img{
 
 /* Hover Changes */
 
-a[href="../home.html"]:hover{
+a[href="home.html"]:hover{
     color: rgb(141, 184, 241);
 }
-a[href="../home.html"]{
+a[href="home.html"]{
     color: rgb(88, 136, 199);
 }
 
-a[href="../gallery/gallery.html"]:hover{
+a[href="../Dino-Site/gallery/gallery.html"]:hover{
     color: rgb(141, 184, 241);
 }
-a[href="../gallery/gallery.html"]{
+a[href="../Dino-Site/gallery/gallery.html"]{
     color: rgb(88, 136, 199);
 }
 
-a[href="../services/services.html"]:hover{
+a[href="../Dino-Site/services/services.html"]:hover{
     color: rgb(141, 184, 241);
 } 
-a[href="../services/services.html"]{
+a[href="../Dino-Site/services/services.html"]{
     color: rgb(88, 136, 199);
 }
 
-/* Spacing out parts */
+/* Information Page */
 
-article ul li{
+article{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 30% 70%;
+    grid-template-areas: 
+    "img name"
+    "img info";
+}
+article ul{
     list-style: none;
-    padding-bottom: .5rem;
 }
 
-main{
-    columns: 2;
-    color: #5A399B;
-    display: flexbox;
-    grid-template-rows: (2,50%);
-    grid-template-columns: (2,50%);
-    grid-template-areas:
-    "orders delivery"
-    "orders extras";
-}
-
-.orders{
-    margin-left: 4rem;
-    margin-bottom: 5rem;
-    grid-area: orders;
-    grid-column: 1/2;
-    background-color: whitesmoke;
-    padding: 1rem;
-    padding-bottom: 2rem;
-}
-
-
-article.extras{
-    grid-column: 2/3;
-    background-color: whitesmoke;
-    padding: 1rem;
-    margin-right: 4rem;
-    grid-area: extras
-}
-    
-
-article.delivery{
-    grid-column: 2/3;
-    background-color: whitesmoke;
-    padding: 1rem;
-    margin-bottom: 1rem;
+article ul li+li{
     margin-top: 1rem;
-    margin-right: 4rem;
-    grid-area: delivery;
+}
+
+.dinoPic{
+    grid-area: img;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.information{
+    grid-area: info;
+    max-width: 75%;
+}
+
+.name{
+    font-size: 3rem;
+    grid-area: name;
 }
 
 button{
@@ -158,38 +136,4 @@ button{
     border: 1px solid;
     border-color: #5A399B;
     margin-top: 1rem;
-    grid-column: 2/3;
-    
 }
-
-article ul li input{
-
-    width: 2.5rem;
-    text-align: right;
-    
-}
-
-body main{
-    margin-left: 4rem;
-}
-
-form .placeOrder{
-    position: absolute;
-    right: 4rem;
-    justify-self: right;
-}
-
-main form form{
-    justify-content: right;
-    position: absolute;
-    right: 0em;
-}
-
-input[type=number]{
-    vertical-align: middle;
-    position: relative;
-    bottom: 1px;
-
-}
-
-
