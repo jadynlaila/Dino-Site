@@ -106,7 +106,6 @@ a[href="../Dino-Site/services/services.html"]{
   }
 
 .orders{
-    margin-left: 4rem;
     grid-area: orders;
     grid-row: 1/4;
     grid-column: 1/2;
@@ -131,6 +130,7 @@ article.delivery{
     background-color: whitesmoke;
     padding: 1rem;
     margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 button{
@@ -147,4 +147,8 @@ article ul li input{
     align-content: right;
     width: 2.5rem;
     text-align: right;
+}
+
+body main{
+    margin-left: 4rem;
 }
