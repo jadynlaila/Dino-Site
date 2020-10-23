@@ -77,10 +77,10 @@ nav img{
 
 /* Hover Changes */
 
-a[href="home.html"]:hover{
+a[href="index.html"]:hover{
     color: rgb(141, 184, 241);
 }
-a[href="home.html"]{
+a[href="index.html"]{
     color: rgb(88, 136, 199);
 }
 
@@ -181,5 +181,7 @@ a[href="../Dino-Site/services/services.html"]{
     position: relative;
     bottom: 1px;
 }
+
+
 
 
