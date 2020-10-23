@@ -116,74 +116,52 @@ article.images{
     padding-top: 0;
 }
 
-article.images .Apatosaurus{
-    grid-area: dino1;
+.images{
+    grid-template-columns: repeat(700px 700px 700px);
+    grid-template-rows: repeat(700px 700px 700px 700px 700px 700px);
 }
 
-article.images .Brachiosaurus{
-    grid-area: dino2;
-}
-article.images .Coelophysis{
-    grid-area: dino3;
-}
-article.images .Diplodocus{
-    grid-area: dino4;
-}
-article.images .Einiosaurus{
-    grid-area: dino5;
-}
-article.images .Ornithomimids{
-    grid-area: dino6;
-}
-article.images .Stegosaurus{
-    grid-area: dino7;
-}
-article.images .Triceratops{
-    grid-area: dino8;
-}
-article.images .Tyrannosaurus{
-    grid-area: dino9;
+.dino1{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
 }
 
-.name{
-    font-size: 2rem;
-    margin-top: 0;
-    padding-top: 0;
-    text-decoration: underline;
+.dino2{
+grid-column: 2 / 3;
+grid-row: 1 / 2;
 }
 
-.apat{
-    grid-area: apat;
+.dino3{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
 }
 
-.brac{
-    grid-area: brac;
+.dino4{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
 }
 
-.coel{
-    grid-area: coel;
+.dino5{
+    grid-column: 1 /1;
+    grid-row: 4/ 5;
 }
 
-.diplo{
-    grid-area: diplo;
+.dino6{
+    grid-column: 1 / 1;
+    grid-row: 4 / 5;
 }
 
-.eino{
-    grid-area: eino;
+.dino7{
+    grid-column: 1 / 1;
+    grid-row: 5 / 6;
 }
 
-.orni{
-    grid-area: orni;
+.dino8{
+    grid-column: 1 / 1;
+    grid-row: 7 / 8;
 }
 
-.stego{
-    grid-area: stego;
-}
-
-.tri{
-    grid-area: tri;
-}
-
-.tyran{
-    grid-area: tyran;
+.dino9{
+    grid-column: 1 / 1;
+    grid-row: 7 / 8;
 }
