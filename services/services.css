@@ -166,6 +166,8 @@ a[href="../services/services.html"]{
 
 .funny-haha-link{
     grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    padding-top: 7px;
     padding-left: 50px;
 }
 
