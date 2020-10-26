@@ -211,10 +211,7 @@ h1{
     padding-right: 10px;
 }
 
-<<<<<<< HEAD
-div::visited{
-    color: white;
-=======
+
 .footer{
     grid-column: 1 / 5;
     grid-row: 8 / 9;
@@ -233,5 +230,4 @@ div::visited{
     border-bottom: 2px solid grey;
     position: relative;
     bottom: 1px;
->>>>>>> 47b16756a81d11e6a23c73cb0eb76b8a6ce7583a
 }
