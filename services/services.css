@@ -96,6 +96,7 @@ a[href="../services/services.html"]{
 }
 
 .header{
+    font-family: sans-serif;
     text-transform: uppercase;
     text-align: center;
     background-color: rgb(116, 211, 255);
@@ -107,6 +108,7 @@ a[href="../services/services.html"]{
 }
 
 .title{
+    font-family: sans-serif;
     border: solid 3px rgb(116, 211, 255);
     max-width: fit-content;
     padding: 3px;
