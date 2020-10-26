@@ -130,11 +130,12 @@ article ul li+li{
     grid-area: name;
 }
 
-button{
+.purchase{
     background-color: #AD96DB;
     padding: .5rem;
     color: white;
     border: 1px solid;
     border-color: #5A399B;
     margin-top: 1rem;
+    text-decoration: none;
 }

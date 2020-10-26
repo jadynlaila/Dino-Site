@@ -103,6 +103,19 @@ header h1{
     font-size: 4rem;
 }
 
+article{
+    padding-left: 60px;
+}
+
+.video{
+    padding-left: 450px;
+}
+
+iframe{
+    border:solid 10px purple;
+    border-radius: 3rem;
+}
+
 
 article.images{
     display: grid;
@@ -125,7 +138,7 @@ article.images{
 
 .images{
     grid-template-columns: repeat(700px 700px 700px);
-    grid-template-rows: repeat(700px 700px 700px 700px 700px 700px);
+    grid-template-rows: repeat(700px 700px 700px 700px 700px 700px 700px);
 }
 
 .dino1{
@@ -198,6 +211,27 @@ h1{
     padding-right: 10px;
 }
 
+<<<<<<< HEAD
 div::visited{
     color: white;
+=======
+.footer{
+    grid-column: 1 / 5;
+    grid-row: 8 / 9;
+    margin: 0;
+    padding: 0;
+    color: rgb(87, 87, 87);
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+    align-content: end;
+    justify-content: space-evenly;
+    position: top;
+    font-size: 12px;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    position: relative;
+    bottom: 1px;
+>>>>>>> 47b16756a81d11e6a23c73cb0eb76b8a6ce7583a
 }
