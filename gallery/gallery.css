@@ -203,14 +203,14 @@ grid-row: 1 / 2;
 h1{
     font-family: sans-serif;
     text-transform: uppercase;
-    max-width: fit-content;
+    max-width: max-content;
     border: solid 10px rgb(179, 65, 255);
     background-color: rgb(116, 211, 255);
     border-radius: 5rem;
     padding-left: 10px;
     padding-right: 10px;
+    max-width: fit-content;
 }
-
 
 .footer{
     grid-column: 1 / 5;
