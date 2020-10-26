@@ -91,6 +91,14 @@ a[href="../services/services.html"]{
     color: rgb(88, 136, 199);
 }
 
+.navbar{
+    padding-top: 5px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
 header h1{
     margin-left: 8rem;
     font-size: 4rem;
@@ -147,21 +155,46 @@ grid-row: 1 / 2;
 }
 
 .dino6{
-    grid-column: 1 / 1;
+    grid-column: 3 / 4;
     grid-row: 4 / 5;
 }
 
 .dino7{
-    grid-column: 1 / 1;
+    grid-column: 2 / 3;
     grid-row: 5 / 6;
 }
 
 .dino8{
-    grid-column: 1 / 1;
+    grid-column: 1 / 2;
     grid-row: 7 / 8;
 }
 
 .dino9{
-    grid-column: 1 / 1;
+    grid-column: 3 / 4;
     grid-row: 7 / 8;
+}
+
+.name{
+    
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(116, 211, 255);
+    border-radius: 5rem;
+    border: solid 5px rgb(179, 65, 255);
+    color: white;
+}
+
+.header{
+    padding-left: 450px;
+}
+
+h1{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    max-width: fit-content;
+    border: solid 10px rgb(179, 65, 255);
+    background-color: rgb(116, 211, 255);
+    border-radius: 5rem;
+    padding-left: 10px;
+    padding-right: 10px;
 }
