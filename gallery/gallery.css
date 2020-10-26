@@ -201,6 +201,7 @@ grid-row: 1 / 2;
 }
 
 h1{
+    color: white;
     font-family: sans-serif;
     text-transform: uppercase;
     max-width: max-content;
