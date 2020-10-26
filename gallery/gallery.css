@@ -203,18 +203,15 @@ grid-row: 1 / 2;
 h1{
     font-family: sans-serif;
     text-transform: uppercase;
-    max-width: fit-content;
+    max-width: max-content;
     border: solid 10px rgb(179, 65, 255);
     background-color: rgb(116, 211, 255);
     border-radius: 5rem;
     padding-left: 10px;
     padding-right: 10px;
+    max-width: fit-content;
 }
 
-<<<<<<< HEAD
-div::visited{
-    color: white;
-=======
 .footer{
     grid-column: 1 / 5;
     grid-row: 8 / 9;
@@ -233,5 +230,4 @@ div::visited{
     border-bottom: 2px solid grey;
     position: relative;
     bottom: 1px;
->>>>>>> 47b16756a81d11e6a23c73cb0eb76b8a6ce7583a
 }
