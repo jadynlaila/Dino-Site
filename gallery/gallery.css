@@ -212,10 +212,6 @@ h1{
     max-width: fit-content;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> a4370ffd28ece6af3fb61c07c65bb4938c671674
 .footer{
     grid-column: 1 / 5;
     grid-row: 8 / 9;

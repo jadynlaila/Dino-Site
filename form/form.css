@@ -6,9 +6,8 @@ background-size: cover;
 }
 
 html body{
-    margin: 0;
+  margin: 0;
 }
-
 header{
     margin-left: 10rem;
     text-decoration: underline;
@@ -105,12 +104,12 @@ a[href="../services/services.html"]{
 
 /* Spacing out parts */
 
-article ul li{
-    list-style: none;
-    padding-bottom: .5rem;
-}
+  article ul li{
+      list-style: none;
+      padding-bottom: .5rem;
+  }
 
-main{
+  main{
     columns: 2;
     color: #5A399B;
     display: flexbox;
@@ -118,7 +117,7 @@ main{
     grid-template-columns: (2,50%);
     grid-template-areas:
     "orders delivery"
-    "orders extras";
+    "orders extras";  
 }
 
 .orders{
@@ -168,10 +167,9 @@ button{
 }
 
 article ul li input{
-
+    align-content: right;
     width: 2.5rem;
     text-align: right;
-    
 }
 
 body main{
@@ -194,5 +192,3 @@ main form form{
     position: absolute;
     left: 19rem;
 }
-
-

@@ -28,7 +28,7 @@
     </nav>
 
     <header>
-        <h1>Order Form:</h1>
+        <h1>Order Forms</h1>
     </header>
 
     
@@ -37,15 +37,24 @@
                 <article class="orders">
                     <h2>Egg Orders</h2>
                     <ul>
-                        <li>Apatosaurus<input type="number" id="number" name="Apatosaurus" min="0" placeholder="0" class="number"></li>
-                        <li>Brachiosaurus<input type="number" id="number" name="Brachiosaurus" min="0" placeholder="0" class="number"></li>
-                        <li>Coelophysis<input type="number" id="number" name="Coelophysis" min="0" placeholder="0" class="number"></li>
-                        <li>Diplodocus<input type="number" id="number" name="Diplodocus" min="0" placeholder="0" class="number"></li>
-                        <li>Einiosaurus<input type="number" id="number" name="Einiosaurus" min="0" placeholder="0" class="number"></li>
-                        <li>Ornithomimids<input type="number" id="number" name="Ornithomimids" min="0" placeholder="0" class="number"></li>
-                        <li>Stegosaurus<input type="number" id="number" name="Stegosaurus" min="0" placeholder="0" class="number"></li>
-                        <li>Triceratops<input type="number" id="number" name="Triceratops" min="0" placeholder="0" class="number"></li>
-                        <li>Tyrannosaurus<input type="number" id="number" name="Tyrannosaurus" min="0" placeholder="0" class="number"></li>
+                        <li>Apatosaurus<input type="number" id="number" name="Apatosaurus" min="0" placeholder="0" class="firstInput" disabled></li>
+                        <li>Brachiosaurus<input type="number" id="number" name="Brachiosaurus" min="0" placeholder="0" class="firstInput" ></li>
+                        <li>Coelophysis<input type="number" id="number" name="Coelophysis" min="0" placeholder="0" class="firstInput" disabled></li>
+                        <li>Diplodocus<input type="number" id="number" name="Diplodocus" min="0" placeholder="0" class="firstInput" disabled></li>
+                        <li>Einiosaurus<input type="number" id="number" name="Einiosaurus" min="0" placeholder="0" class="firstInput" ></li>
+                        <li>Ornithomimids<input type="number" id="number" name="Ornithomimids" min="0" placeholder="0" class="firstInput" ></li>
+                        <li>Stegosaurus<input type="number" id="number" name="Stegosaurus" min="0" placeholder="0" class="firstInput" ></li>
+                        <li>Triceratops<input type="number" id="number" name="Triceratops" min="0" placeholder="0" class="firstInput" disabled></li>
+                        <li>Tyrannosaurus<input type="number" id="number" name="Tyrannosaurus" min="0" placeholder="0" class="firstInput" ></li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h2>Contact Info</h2>
+                    <ul>
+                        <li>Name<input id="number" name="C.Name" min="0" placeholder="First Last"></li>
+                        <li>Email<input id="number" name="C.Email" min="0" placeholder="example@example.com"></li>
+                        <li>Phone Number<input id="number" name="C.Phone" min="0" placeholder="(555) 555 - 5555"></li>
                     </ul>
                 </article>
 
@@ -66,10 +75,9 @@
                             <li><input type="checkbox" id="course" name="User.Topping4">Video Training Course</li>
                         </ul>
                 </article>
-        </form>
-                <form>
-                    <button type="submit" class="placeOrder">Place Order</button>
-                </form>
+
+            <button type="submit" class="placeOrder">Place Order</button>
+
     </main>
 </body>
 </html>
