@@ -123,7 +123,7 @@ main{
 
 .orders{
     margin-left: 4rem;
-    margin-bottom: 5rem;
+    margin-bottom: 12rem;
     grid-area: orders;
     grid-column: 1/2;
     background-color: whitesmoke;
@@ -195,4 +195,14 @@ main form form{
     left: 19rem;
 }
 
+.contact{
+    grid-column: 2/3;
+    background-color: whitesmoke;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-right: 4rem;
+    grid-area: delivery;
+    border: 1px solid black;
+}
 
