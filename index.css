@@ -203,27 +203,30 @@ html body{
 
 nav, article, aside, footer{
     background-color: whitesmoke;
-    padding: 1%;
+    /* padding: 1%; */
 }
 
 nav{
-    height: 40px;
-    display: flex;
+    height: 80px;
+    display: grid;
     margin-bottom: 10px;
     margin-top: 20px;
     align-items: center;
     margin: 8px;
     padding-top: 20px;
     max-width: 400px;
-    flex-wrap: wrap;
+    grid-template-columns: 15%  85%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "logo search"
+    "logo nav"
+
 }
 
 nav ul{
     padding: 0;
     list-style-type: none;
-    flex: 2;
-    display: flex;
-
+    grid-area: nav;
 }
 
 nav li{
@@ -235,11 +238,13 @@ nav li{
 
 nav a{
     display: inline-block;
-    font-size: 2rem;
+    font-size: 12px;
     text-transform: uppercase;
     text-decoration: underline;
     color: black;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    position: relative;
+    left: 0rem;
 }
 
 nav form{
@@ -247,11 +252,23 @@ nav form{
     display: flex;
     align-items: center;
     justify-content: center;
+    grid-area: search;
+    padding-left: 5rem;
 }
 
 nav img{
-    max-width: 99%;
-    max-height: 99%;
+    max-width: 70px;
+    max-height: 70px;
+    grid-area: logo;
+    justify-content: center;
+}
+
+.sType{
+    grid-area: search;
+}
+
+.sButton{
+    grid-area: search;
 }
 
 /* Hover Changes */
