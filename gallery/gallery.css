@@ -43,7 +43,6 @@ nav a{
     font-size: 2rem;
     text-transform: uppercase;
     text-decoration: underline;
-    color: black;
     justify-content: space-evenly;
 }
 
@@ -197,4 +196,8 @@ h1{
     border-radius: 5rem;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+div::visited{
+    color: white;
 }

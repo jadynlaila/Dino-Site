@@ -117,6 +117,7 @@ article ul li+li{
     align-items: center;
     align-content: center;
     margin: 0 auto;
+    width: 400px;
 }
 
 .information{
